@@ -16,6 +16,10 @@
 .card-body li{
     font-size: 14px;
 }
+.card-body li:hover{
+  background-color: #2177EB;
+  color: white;
+}
 .card a{
     font-size: 12px;
 }

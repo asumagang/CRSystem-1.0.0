@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { InsertDataModule } from './insert-data/insert-data.module';
 import { UsersModule } from './users/users.module';
 import { HeaderComponent } from './header/header.component';
+import { ProgramsModule } from './programs/programs.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HeaderComponent } from './header/header.component';
     AppRoutingModule,
     DashboardModule,
     InsertDataModule,
-    UsersModule
+    UsersModule,
+    ProgramsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
