@@ -1,0 +1,9 @@
+.navbar {
+    background-color: #171717;
+}
+.navbar a{
+    color: white
+}
+.navbar-brand img{
+    height: 50px;
+}

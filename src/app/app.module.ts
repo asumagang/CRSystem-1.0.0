@@ -7,11 +7,13 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { InsertDataModule } from './insert-data/insert-data.module';
 import { UsersModule } from './users/users.module';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
