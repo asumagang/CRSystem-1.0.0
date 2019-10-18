@@ -1,0 +1,30 @@
+.bg-gray5 {
+  background-color: #181818;
+  height: 100vh;
+  overflow: auto;
+}
+.right {
+  height: 100vh;
+  overflow: auto;
+}
+.head {
+  background-color: #2e2d2d;
+  height: 50px;
+  color: white;
+  text-align: center;
+}
+.card-body li {
+  font-size: 14px;
+}
+.card a {
+  font-size: 12px;
+}
+
+.navbar a img {
+  height: 25px;
+  width: 25px;
+}
+.bpadding{
+  padding: 7px 10px;
+  font-size: 14px;
+}

@@ -1,0 +1,117 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 bg-dark1">
+      <div id="accordion">
+        <div class="card c1">
+          <div class="card-header head" id="headingOne">
+            <a
+              class="btn btn-link"
+              data-toggle="collapse"
+              data-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <i class="fa fa-arrow-down"></i> Programs
+            </a>
+          </div>
+
+          <div
+            id="collapseOne"
+            class="collapse show"
+            aria-labelledby="headingOne"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <ul class="list-group list " *ngFor="let program of Programs">
+                <li class="list-group-item">{{ program.name }}</li>
+                <!-- <li class="list-group-item">Second item</li>
+                      <li class="list-group-item">Third item</li>
+                      <li class="list-group-item">Fourth item</li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header head" id="headingTwo">
+            <a
+              class="btn btn-link collapsed"
+              data-toggle="collapse"
+              data-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              <i class="fa fa-arrow-down"></i> Manage Programs
+            </a>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <ul class="list-group list ">
+                <li class="list-group-item">View All</li>
+                <li class="list-group-item">Add New</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 right">
+      <div class="container-flex">
+        <div class="container  mt-5">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputState">Program</label>
+                <input type="text" class="form-control" id="inputCity" />
+              </div>
+              <div class="form-group col-md-6">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputState">Province</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Cebu</option>
+                  <option>Bohol</option>
+                  <option>Siquijor</option>
+                  <option>Negros Oriental</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputState">City/Municipality</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Cebu City </option>
+                  <option>Minglanilla</option>
+                  <option>Mandaue</option>
+                  <option>Talisay</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">No. of Benes</label>
+                <input type="text" class="form-control" id="inputCity" />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputCity">Amount Disbursed</label>
+                <input type="text" class="form-control" id="inputCity" />
+              </div>
+            </div>
+             <button type="submit" class="btn btn-primary float-right">
+              Insert
+            </button>
+            <button type="submit" class="btn btn-primary float-right mr-1">
+              Cancel
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
