@@ -1,9 +1,20 @@
+#tophead {
+  max-height: 10px;
+  background-color: black;
+  color: white;
+  font-size: 7px;
+}
+/* #tophead p{
+  float:right;
+} */
 .navbar {
-    background-color: #171717;
+  background-color: white;
+  max-height: 65px;
 }
-.navbar a{
-    color: white
+.navbar a {
+  color: #000000;
+  font-size: 15px;
 }
-.navbar-brand img{
-    height: 50px;
+.navbar-brand img {
+  height: 50px;
 }

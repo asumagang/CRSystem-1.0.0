@@ -1,5 +1,5 @@
-<nav class="navbar sticky-top navbar-expand-md ">
-    <a class="navbar-brand" href="#"><img src="/../../assets/logo.png" alt=""></a>
+
+<nav class="navbar sticky-top navbar-expand-md bg-white">
     <button
       class="navbar-toggler"
       type="button"
@@ -22,65 +22,7 @@
 
 
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 bg-dark1">
-      <div id="accordion">
-        <div class="card c1">
-          <div class="card-header head" id="headingOne">
-            <a
-              class="btn btn-link"
-              data-toggle="collapse"
-              data-target="#collapseOne"
-              aria-expanded="true"
-              aria-controls="collapseOne"
-            >
-              <i class="fa fa-arrow-down"></i> Programs
-            </a>
-          </div>
-
-          <div
-            id="collapseOne"
-            class="collapse show"
-            aria-labelledby="headingOne"
-            data-parent="#accordion"
-          >
-            <div class="card-body">
-              <ul class="list-group list " *ngFor="let program of Programs">
-                <li class="list-group-item">{{ program.name }}</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header head" id="headingTwo">
-            <a
-              class="btn btn-link collapsed"
-              data-toggle="collapse"
-              data-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              <i class="fa fa-arrow-down"></i> Manage Programs
-            </a>
-          </div>
-          <div
-            id="collapseTwo"
-            class="collapse"
-            aria-labelledby="headingTwo"
-            data-parent="#accordion"
-          >
-            <div class="card-body">
-              <ul class="list-group list ">
-                <li class="list-group-item">View All</li>
-                <li class="list-group-item">Add New</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 right">
-      <div class="container-flex">
+    <div class="container-flex">
         <div class="container m-5">
           <div class="py-5">
             <div class="container">
@@ -153,6 +95,4 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
 </div>

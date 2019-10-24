@@ -3,6 +3,11 @@
   height: 100vh;
   overflow: auto;
 }
+.bg-white {
+  background-color: white;
+  border-top: solid #c6c6c5 1px;
+  border-bottom: solid #c6c6c5 1px;
+}
 .right {
   height: 100vh;
   overflow: auto;
@@ -46,20 +51,18 @@ td{
   width: 25px;
 }
 .navbar {
-  max-height: 50px;
-   background-color: #2E2D2D ; 
+  max-height: 40px;
   /* background-color: #6F2232 ; */
+  /* box-shadow:  2px 2px 8px #888888; */
+  box-shadow: 0px 10px 10px -15px #111;
 }
 .navbar a {
-  color: white;
-  background-color: #2E2D2D;
-  font-size: 14px;
+  color: #2e2d2d;
+  /* background-color: #2E2D2D; */
+  font-size: 13px;
 }
 .navbar a:hover {
-    color: #1289F8 ; 
-    /* color:  #C3073F; */
-    background-color: #2E2D2D;
-    /* padding: 8px 10px; */
+  color: #1289f8;
 }
 span {
   color: white;
