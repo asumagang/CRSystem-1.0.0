@@ -70,3 +70,22 @@ span {
 .underline{
     border-bottom: #1289F8 solid;
 }
+
+
+.panelbox {
+  border-bottom: solid #393A39  1px;
+}
+.panelbox a{
+color: #1289f8;
+font-size: 15px;
+text-align: center;
+}
+.acc td{
+background-color: white;
+
+}
+.acc td:hover{
+color: #4FFC52 ;
+background-color: #2e2d2d
+
+}

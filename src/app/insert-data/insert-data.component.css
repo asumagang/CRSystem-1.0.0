@@ -59,3 +59,21 @@ span {
 .underline {
   border-bottom: #1289f8 solid;
 }
+
+.panelbox {
+    border-bottom: solid #393A39  1px;
+}
+.panelbox a{
+  color: #1289f8;
+  font-size: 15px;
+  text-align: center;
+}
+.table td{
+  background-color: white;
+
+}
+.table td:hover{
+  color: #4FFC52 ;
+  background-color: #2e2d2d
+
+}
