@@ -13,11 +13,8 @@
         <li class="nav-item">
           <a class="nav-link ml-4" routerLink="/dashboard" routerLinkActive="active"><i class="fa fa-fw fa-home mr-2"> </i>Dashboard</a>
         </li>
-        <!-- <li class="nav-item ">
-          <a class="nav-link ml-4 underline" routerLink="/insert-data" routerLinkActive="active"><i class="fa fa-table"></i> Insert Data</a>
-        </li> -->
         <li class="nav-item">
-          <a class="nav-link ml-4 underline"routerLink="/users" routerLinkActive="active"><i class="fa fa-users mr-2"></i> Programs</a>
+          <a class="nav-link ml-4 underline"routerLink="/users" routerLinkActive="active"><i class="fa fa-file-text mr-2"></i> Reports</a>
         </li>
       </ul>
     </div>
@@ -36,7 +33,7 @@
                     data-toggle="collapse"
                     data-parent="#accordion"
                     href="#collapseOne"
-                    ><i class="fa fa-arrow-down mr-3"></i>Manage Programs</a
+                    ><i class="fa fa-arrow-down mr-3"></i>Manage Users</a
                   >
                 </p>
               </div>
@@ -101,87 +98,41 @@
           </div>
     </div>
     <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 right">
-      <div class="container-flex">
-        <br />
-        <form class="form-inline my-2 my-lg-0 float-right">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-        </form>
-        <ul class="nav nav-tabs" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#home"
-              >Active Users</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " data-toggle="tab" href="#menu1">Block Users</a>
-          </li>
-        </ul>
-
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <div id="home" class="container tab-pane active">
-            <br />
-            <div >
-              <table class="table table-hover table-sm">
-                <thead>
-                  <tr>
-                    <th>#</th>
-                    <th>Firstname</th>
-                    <th>Lastname</th>
-                    <th>Email</th>
-                    <th>Department</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr *ngFor="let user of Users">
-                    <td>{{ user.id }}</td>
-                    <td>{{ user.firstname }}</td>
-                    <td>{{ user.lastname }}</td>
-                    <td>{{ user.email }}</td>
-                    <td>{{ user.department }}</td>
-                    <td>
-                      <button class="btn btn-dark mr-2 ">Edit</button>
-                      <button class="btn btn-dark ">Block</button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+      <div class="container-flex mt-5">
+        <div class="row hidden-md-up">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-block">
+                <div class="card-body com">
+                    <div>
+                        <div style="display: block">
+                          <canvas baseChart
+                                  [datasets]="barChartData"
+                                  [labels]="barChartLabels"
+                                  [options]="barChartOptions"
+                                  [legend]="barChartLegend"
+                                  [chartType]="barChartType">
+                          </canvas>
+                        </div>
+                      </div>
+                  
+                </div>
+              </div>
             </div>
           </div>
-          <div id="menu1" class="container tab-pane fade">
-            <br />
-            <div class="table-responsive">
-              <table class="table   table-hover table-sm">
-                <thead>
-                  <tr>
-                    <th>#</th>
-                    <th>Firstname</th>
-                    <th>Lastname</th>
-                    <th>Email</th>
-                    <th>Department</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr *ngFor="let user of Users">
-                    <td>{{ user.id }}</td>
-                    <td>{{ user.firstname }}</td>
-                    <td>{{ user.lastname }}</td>
-                    <td>{{ user.email }}</td>
-                    <td>{{ user.department }}</td>
-                    <td>
-                      <button class="btn btn-dark mr-2 ">Edit</button>
-                      <button class="btn btn-dark ">Block</button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-block">
+                <div class="card-body com" >
+                    <div style="display: block">
+                        <canvas baseChart
+                                [data]="pieChartData"
+                                [labels]="pieChartLabels"
+                                [chartType]="pieChartType"></canvas>
+                      </div>
+                 
+                </div>
+              </div>
             </div>
           </div>
         </div>

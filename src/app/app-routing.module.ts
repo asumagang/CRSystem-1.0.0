@@ -20,6 +20,10 @@ const routes: Routes = [
     loadChildren: "./programs/programs.module#ProgramsModule"
   },
   {
+    path: "reports",
+    loadChildren: "./reports/reports.module#ReportsModule"
+  },
+  {
     path: "",
     redirectTo: "dashboard",
     pathMatch: "full"

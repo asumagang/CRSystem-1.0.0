@@ -9,6 +9,7 @@ import { UsersModule } from './users/users.module';
 import { HeaderComponent } from './header/header.component';
 import { ProgramsModule } from './programs/programs.module';
 import { FooterComponent } from './footer/footer.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FooterComponent } from './footer/footer.component';
     DashboardModule,
     InsertDataModule,
     UsersModule,
-    ProgramsModule
+    ProgramsModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
