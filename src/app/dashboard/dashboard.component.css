@@ -51,3 +51,6 @@ span {
 .card p{
   font-size: 12px;
 }
+.nav-item img{
+  max-width: 15px;
+}

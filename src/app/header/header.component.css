@@ -10,6 +10,7 @@
 .navbar {
   background-color: white;
   max-height: 65px;
+  z-index: 10000;
 }
 .navbar a {
   color: #000000;
@@ -17,4 +18,7 @@
 }
 .navbar-brand img {
   height: 50px;
+}
+.nav-item img{
+  max-width: 35px;
 }

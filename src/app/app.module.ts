@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { ProgramsModule } from './programs/programs.module';
 import { FooterComponent } from './footer/footer.component';
 import { ChartsModule } from 'ng2-charts';
+import { NotificationsModule } from './notifications/notifications.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ChartsModule } from 'ng2-charts';
     InsertDataModule,
     UsersModule,
     ProgramsModule,
-    ChartsModule
+    ChartsModule,
+    NotificationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
