@@ -27,6 +27,14 @@ export class InsertDataComponent implements OnInit {
     {
       name:"Centenarian Law Implementation",
       target:12000
+    },
+    {
+      name:"Kalahi-CIDSS-NCDDP",
+      target:12000
+    },
+    {
+      name:"Lingap sa Masa",
+      target:12000
     }
   ]
 

@@ -43,38 +43,16 @@
                 data-toggle="collapse"
                 data-parent="#accordion"
                 href="#collapseOne"
-                ><i class="fa fa-arrow-down mr-3"></i>Manage Programs</a
+                ><i class="fa fa-arrow-down mr-3"></i>View Data</a
               >
             </p>
           </div>
           <div id="collapseOne" class="panel-collapse collapse in">
             <div class="panel-body">
               <table class="table">
-                <tr>
+                <tr *ngFor="let program of Programs">
                   <td>
-                    <span class="glyphicon glyphicon-pencil text-primary"></span
-                    ><a >Articles</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="glyphicon glyphicon-flash text-success"></span
-                    ><a>News</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span class="glyphicon glyphicon-file text-info"></span
-                    ><a >Newsletters</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <span
-                      class="glyphicon glyphicon-comment text-success"
-                    ></span
-                    ><a >Comments</a>
-                    <span class="badge">42</span>
+                      {{program.name}}
                   </td>
                 </tr>
               </table>
@@ -88,7 +66,7 @@
                 data-toggle="collapse"
                 data-parent="#accordion"
                 href="#collapseTwo"
-                ><i class="fa fa-arrow-down mr-3"></i>Modules</a
+                ><i class="fa fa-arrow-down mr-3"></i>Representatives</a
               >
             </p>
           </div>
@@ -97,23 +75,7 @@
               <table class="table">
                 <tr>
                   <td>
-                    <a href="http://www.jquery2dotnet.com">Orders</a>
-                    <span class="label label-success">$ 320</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="http://www.jquery2dotnet.com">Invoices</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="http://www.jquery2dotnet.com">Shipments</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="http://www.jquery2dotnet.com">Tex</a>
+                    View Representatives
                   </td>
                 </tr>
               </table>
@@ -129,7 +91,9 @@
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputState">Program</label>
-                <input type="text" class="form-control" id="inputCity" />
+                <select id="inputState" class="form-control" >
+                    <option *ngFor="let program of Programs" [value]="program.name">{{program.name}}</option>
+                  </select>
               </div>
               <div class="form-group col-md-6"></div>
             </div>
