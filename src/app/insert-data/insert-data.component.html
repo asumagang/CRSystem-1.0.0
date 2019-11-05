@@ -78,6 +78,11 @@
                     View Representatives
                   </td>
                 </tr>
+                <tr>
+                    <td>
+                      Add Representative
+                    </td>
+                  </tr>
               </table>
             </div>
           </div>
@@ -129,10 +134,22 @@
                 <input type="text" class="form-control" id="inputCity" />
               </div>
             </div>
-            <button type="submit" class="btn btn-primary float-right">
+            <hr>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputState">If Pantawid</label>
+                  <p style="font-size: 13px;">identify cash transfer type:</p>
+                  <select id="inputState" class="form-control" disabled>
+                      <option >MCCT</option>
+                      <option >RCCT</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6"></div>
+              </div>
+            <button type="submit" class="btn btn-primary float-right" (click)="Success()">
               Insert
             </button>
-            <button type="submit" class="btn btn-primary float-right mr-1">
+            <button type="submit" class="btn btn-primary float-right mr-1" (click)="insert()">
               Cancel
             </button>
           </form>

@@ -12,9 +12,10 @@ import { PantawidDataComponent } from './pantawid-data/pantawid-data.component';
   imports: [
     CommonModule,
     InsertDataRoutingModule,
-    RouterModule
-    
-    
+    RouterModule  
+  ],
+  entryComponents:[
+    PantawidDataComponent
   ]
 })
 export class InsertDataModule { }

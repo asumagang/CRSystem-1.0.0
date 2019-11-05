@@ -11,6 +11,8 @@ import { ProgramsModule } from './programs/programs.module';
 import { FooterComponent } from './footer/footer.component';
 import { ChartsModule } from 'ng2-charts';
 import { NotificationsModule } from './notifications/notifications.module';
+import {ToastrModule} from 'ngx-toastr';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,13 @@ import { NotificationsModule } from './notifications/notifications.module';
     UsersModule,
     ProgramsModule,
     ChartsModule,
-    NotificationsModule
+    NotificationsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      timeOut: 5000,
+      positionClass:'toast-top-right',
+      preventDuplicates:true,
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

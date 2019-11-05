@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-insert-data',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InsertDataComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private toastr:ToastrService
+  ) { }
 
   ngOnInit() {
   }
@@ -38,4 +41,22 @@ export class InsertDataComponent implements OnInit {
     }
   ]
 
+
+  showSuccess(title:string){
+    this.toastr.success(title);
+  }
+  showError(title:string){
+    this.toastr.error(title);
+  }
+  showWarning(title:string){
+    this.toastr.warning(title);
+  }
+  insert(){
+    this.showSuccess("Data Inserted Successfully");
+  }
+
+   
+  Success() {
+    this.toastr.success('Hello world!', 'Toastr fun!');
+  }
 }

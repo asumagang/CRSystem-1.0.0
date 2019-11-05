@@ -81,7 +81,9 @@ font-size: 15px;
 text-align: center;
 }
 .acc td{
-background-color: white;
+  background-color: #2B2B2B ;
+  color: #C2C1C1 ;
+  font-size: 12px
 
 }
 .acc td:hover{
