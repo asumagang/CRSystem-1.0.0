@@ -1,0 +1,56 @@
+<div class="container-flex mt-3">
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputState">Program</label>
+        <select id="inputState" class="form-control">
+          <option *ngFor="let program of Programs" [value]="program.name">{{
+            program.name
+          }}</option>
+        </select>
+      </div>
+      <div class="form-group col-md-6"></div>
+    </div>
+  </form>
+  <table class="table table-hover table-sm">
+    <thead>
+      <tr>
+        <th>Province</th>
+        <th>District</th>
+        <th>Municipality</th>
+        <th>No.of Benes</th>
+        <th>Amount Disbursed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Cebu</td>
+        <td>1st District</td>
+        <td>Minglanilla</td>
+        <td>15559</td>
+        <td>35,313,900.00</td>
+      </tr>
+      <tr>
+        <td>Cebu</td>
+        <td>1st District</td>
+        <td>Carcar City</td>
+        <td>15559</td>
+        <td>54,645,900.00</td>
+      </tr>
+      <tr>
+        <td>Cebu</td>
+        <td>1st District</td>
+        <td>Minglanilla</td>
+        <td>15559</td>
+        <td>35,313,900.00</td>
+      </tr>
+      <tr>
+        <td>Cebu</td>
+        <td>1st District</td>
+        <td>Naga City</td>
+        <td>2,625</td>
+        <td>26,292,000.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

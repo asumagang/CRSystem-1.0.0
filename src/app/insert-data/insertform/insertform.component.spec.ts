@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PantawidDataComponent } from './pantawid-data.component';
+import { InsertformComponent } from './insertform.component';
 
-describe('PantawidDataComponent', () => {
-  let component: PantawidDataComponent;
-  let fixture: ComponentFixture<PantawidDataComponent>;
+describe('InsertformComponent', () => {
+  let component: InsertformComponent;
+  let fixture: ComponentFixture<InsertformComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PantawidDataComponent ]
+      declarations: [ InsertformComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PantawidDataComponent);
+    fixture = TestBed.createComponent(InsertformComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

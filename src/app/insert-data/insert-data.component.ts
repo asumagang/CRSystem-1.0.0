@@ -54,9 +54,12 @@ export class InsertDataComponent implements OnInit {
   insert(){
     this.showSuccess("Data Inserted Successfully");
   }
+  cancel(){
+    this.showError("Data Insert Unsuccessfully");
+  }
 
    
-  Success() {
-    this.toastr.success('Hello world!', 'Toastr fun!');
-  }
+  // Success() {
+  //   this.toastr.success('Hello world!', 'Toastr fun!');
+  // }
 }

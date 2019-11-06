@@ -38,21 +38,26 @@
       <div class="panel-group mt-5" id="accordion">
         <div class="panel panel-default">
           <div class="panel-heading panelbox">
-            <p class="panel-title ">
+            <p class="panel-title">
               <a
                 data-toggle="collapse"
                 data-parent="#accordion"
-                href="#collapseOne"
-                ><i class="fa fa-arrow-down mr-3"></i>View Data</a
+                href="#collapse3"
+                ><i class="fa fa-arrow-down mr-3"></i>Manage Data</a
               >
             </p>
           </div>
-          <div id="collapseOne" class="panel-collapse collapse in">
+          <div id="collapse3" class="panel-collapse collapse">
             <div class="panel-body">
               <table class="table">
-                <tr *ngFor="let program of Programs">
-                  <td>
-                      {{program.name}}
+                <tr>
+                  <td [routerLink]="'insertform'" routerLinkActive="active">
+                    Insert Data
+                  </td>
+                </tr>
+                <tr>
+                  <td [routerLink]="'viewdata'" routerLinkActive="active">
+                    View Data
                   </td>
                 </tr>
               </table>
@@ -79,10 +84,10 @@
                   </td>
                 </tr>
                 <tr>
-                    <td>
-                      Add Representative
-                    </td>
-                  </tr>
+                  <td>
+                    Add Representative
+                  </td>
+                </tr>
               </table>
             </div>
           </div>
@@ -91,69 +96,7 @@
     </div>
     <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 right">
       <div class="container-flex">
-        <div class="container  mt-5">
-          <form>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputState">Program</label>
-                <select id="inputState" class="form-control" >
-                    <option *ngFor="let program of Programs" [value]="program.name">{{program.name}}</option>
-                  </select>
-              </div>
-              <div class="form-group col-md-6"></div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputState">Province</label>
-                <select id="inputState" class="form-control">
-                  <option selected>Cebu</option>
-                  <option>Bohol</option>
-                  <option>Siquijor</option>
-                  <option>Negros Oriental</option>
-                </select>
-              </div>
-              <div class="form-group col-md-6">
-                <label for="inputState">City/Municipality</label>
-                <select id="inputState" class="form-control">
-                  <option selected>Cebu City </option>
-                  <option>Minglanilla</option>
-                  <option>Mandaue</option>
-                  <option>Talisay</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputCity">No. of Benes</label>
-                <input type="text" class="form-control" id="inputCity" />
-              </div>
-              <div class="form-group col-md-6">
-                <label for="inputCity">Amount Disbursed</label>
-                <input type="text" class="form-control" id="inputCity" />
-              </div>
-            </div>
-            <hr>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputState">If Pantawid</label>
-                  <p style="font-size: 13px;">identify cash transfer type:</p>
-                  <select id="inputState" class="form-control" disabled>
-                      <option >MCCT</option>
-                      <option >RCCT</option>
-                    </select>
-                </div>
-                <div class="form-group col-md-6"></div>
-              </div>
-            <button type="submit" class="btn btn-primary float-right" (click)="Success()">
-              Insert
-            </button>
-            <button type="submit" class="btn btn-primary float-right mr-1" (click)="insert()">
-              Cancel
-            </button>
-          </form>
-        </div>
+        <router-outlet></router-outlet>
       </div>
     </div>
   </div>

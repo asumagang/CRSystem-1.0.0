@@ -1,0 +1,63 @@
+<div class="container  mt-5">
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputState">Program</label>
+          <select id="inputState" class="form-control" >
+              <option *ngFor="let program of Programs" [value]="program.name">{{program.name}}</option>
+            </select>
+        </div>
+        <div class="form-group col-md-6"></div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputState">Province</label>
+          <select id="inputState" class="form-control">
+            <option selected>Cebu</option>
+            <option>Bohol</option>
+            <option>Siquijor</option>
+            <option>Negros Oriental</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputState">City/Municipality</label>
+          <select id="inputState" class="form-control">
+            <option selected>Cebu City </option>
+            <option>Minglanilla</option>
+            <option>Mandaue</option>
+            <option>Talisay</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">No. of Benes</label>
+          <input type="text" class="form-control" id="inputCity" />
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputCity">Amount Disbursed</label>
+          <input type="text" class="form-control" id="inputCity" />
+        </div>
+      </div>
+      <hr>
+      <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputState">If Pantawid</label>
+            <p style="font-size: 13px;">identify cash transfer type:</p>
+            <select id="inputState" class="form-control" disabled>
+                <option >MCCT</option>
+                <option >RCCT</option>
+              </select>
+          </div>
+          <div class="form-group col-md-6"></div>
+        </div>
+      <button type="submit" class="btn btn-primary float-right" (click)="insert()">
+        Insert
+      </button>
+      <button type="submit" class="btn btn-primary float-right mr-1" (click)="cancel()">
+        Cancel
+      </button>
+    </form>
+  </div>
