@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ReportsComponent } from './reports.component';
 import { DistrictreportComponent } from './districtreport/districtreport.component';
 import { GraphicalreportComponent } from './graphicalreport/graphicalreport.component';
+import { ProvincialreportComponent } from './provincialreport/provincialreport.component';
 
 
 
@@ -15,6 +16,9 @@ const routes: Routes = [
             },
             {
                 path: 'graphicalreport',component:GraphicalreportComponent
+            },
+            {
+                path: 'provincialreport',component:ProvincialreportComponent
             },
             {
                 path: '', redirectTo: 'graphicalreport', pathMatch: 'full'
