@@ -4,11 +4,13 @@ import { ReportsComponent } from './reports.component';
 import { RouterModule } from '@angular/router';
 import { ReportsRoutingModule } from './reports-routing.module';
 import { ChartsModule } from 'ng2-charts';
+import { DistrictreportComponent } from './districtreport/districtreport.component';
+import { GraphicalreportComponent } from './graphicalreport/graphicalreport.component';
 
 
 
 @NgModule({
-  declarations: [ReportsComponent],
+  declarations: [ReportsComponent,DistrictreportComponent,GraphicalreportComponent],
   imports: [
     CommonModule,
     RouterModule,

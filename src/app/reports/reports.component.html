@@ -29,33 +29,30 @@
             <div class="panel panel-default">
               <div class="panel-heading panelbox">
                 <p class="panel-title ">
-                  <a
-                    data-toggle="collapse"
-                    data-parent="#accordion"
-                    href="#collapseOne"
-                    ><i class="fa fa-arrow-down mr-3"></i>Manage Users</a
+                  <a [routerLink]="'graphicalreport'" routerLinkActive="active"
+                    ><i class="fa fa-bar-chart mr-3"></i>Graphical Reports</a
                   >
                 </p>
               </div>
-              <div id="collapseOne" class="panel-collapse collapse in">
-                <div class="panel-body">
-                  <table class="table acc">
-                    <tr>
-                      <td>
-                        <span class="glyphicon glyphicon-pencil text-primary"></span
-                        ><a >Add New User</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <span class="glyphicon glyphicon-flash text-success"></span
-                        ><a>News</a>
-                      </td>
-                    </tr>
-                  </table>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading panelbox">
+                  <p class="panel-title ">
+                    <a [routerLink]="'provincialreport'" routerLinkActive="active"
+                      ><i class="fa fa-table mr-3"></i>Provincial Reports</a
+                    >
+                  </p>
                 </div>
               </div>
-            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading panelbox">
+                  <p class="panel-title ">
+                    <a [routerLink]="'districtreport'" routerLinkActive="active"
+                      ><i class="fa fa-table mr-3"></i>District Reports</a
+                    >
+                  </p>
+                </div>
+              </div>
             <div class="panel panel-default">
               <div class="panel-heading panelbox">
                 <p class="panel-title">
@@ -99,43 +96,8 @@
     </div>
     <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 right">
       <div class="container-flex mt-5">
-        <div class="row hidden-md-up">
-          <div class="col-md-6">
-            <div class="card">
-              <div class="card-block">
-                <div class="card-body com">
-                    <div>
-                        <div style="display: block">
-                          <canvas baseChart
-                                  [datasets]="barChartData"
-                                  [labels]="barChartLabels"
-                                  [options]="barChartOptions"
-                                  [legend]="barChartLegend"
-                                  [chartType]="barChartType">
-                          </canvas>
-                        </div>
-                      </div>
-                  
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card">
-              <div class="card-block">
-                <div class="card-body com" >
-                    <div style="display: block">
-                        <canvas baseChart
-                                [data]="pieChartData"
-                                [labels]="pieChartLabels"
-                                [chartType]="pieChartType"></canvas>
-                      </div>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          <router-outlet></router-outlet>
+        
       </div>
     </div>
   </div>

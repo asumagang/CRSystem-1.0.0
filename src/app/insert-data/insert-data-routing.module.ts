@@ -16,7 +16,7 @@ const routes: Routes = [
                 path:'viewdata',component:ViewdataComponent
             },
             {
-                path: '', redirectTo: 'insertform', pathMatch: 'full'
+                path: '', redirectTo: 'viewdata', pathMatch: 'full'
               }
         ]
     }
