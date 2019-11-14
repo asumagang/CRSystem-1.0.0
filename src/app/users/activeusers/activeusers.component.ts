@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-
+import {
+  NgbModalConfig,
+  NgbModal,
+  NgbActiveModal
+} from "@ng-bootstrap/ng-bootstrap";
+import { AddusersComponent } from './addusers/addusers.component';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-activeusers',
   templateUrl: './activeusers.component.html',
@@ -7,7 +13,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActiveusersComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private modal: NgbModal,
+    private router: Router,
+  ) {
+
+   }
 
   ngOnInit() {
   }
@@ -40,7 +51,26 @@ export class ActiveusersComponent implements OnInit {
       lastname:"Sumagang",
       email:"janaidrhean@gmail.com",
       department:"Pantawid Pamilya"
+    },
+    {
+      id:"5",
+      firstname:"Ishigami",
+      lastname:"Senku",
+      email:"janaidrhean@gmail.com",
+      department:"Pantawid Pamilya"
+    },
+    {
+      id:"6",
+      firstname:"Giyu",
+      lastname:"Tomioka",
+      email:"waterhashira@gmail.com",
+      department:"Social Pension"
     }
   ]
 
+
+  openaddmodal() {
+    console.log("naclickl");
+    this.modal.open(AddusersComponent);
+  }
 }

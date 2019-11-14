@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { ActiveusersComponent } from './activeusers/activeusers.component';
 import { BlockedusersComponent } from './blockedusers/blockedusers.component';
 import { UsersrequestsComponent } from './usersrequests/usersrequests.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -14,7 +15,8 @@ import { UsersrequestsComponent } from './usersrequests/usersrequests.component'
   imports: [
     CommonModule,
     UsersRoutingModule,
-    RouterModule
+    RouterModule,
+    NgbModule
   ]
 })
 export class UsersModule { }

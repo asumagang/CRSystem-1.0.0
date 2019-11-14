@@ -13,6 +13,7 @@ import { ChartsModule } from 'ng2-charts';
 import { NotificationsModule } from './notifications/notifications.module';
 import {ToastrModule} from 'ngx-toastr';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -30,11 +31,13 @@ import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
     ChartsModule,
     NotificationsModule,
     BrowserAnimationsModule,
+    NgbModule,
     ToastrModule.forRoot({
       timeOut: 8000,
       positionClass:'toast-top-right',
       preventDuplicates:true,
     })
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

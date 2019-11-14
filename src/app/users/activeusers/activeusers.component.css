@@ -91,4 +91,15 @@
     background-color: #181818 
   
   }
+.rnd{
+  border-radius: 50%;
+}
+
+.pagination-area{
+  margin-left: 400px;
+}
+.bg-darkgray{
+  background-color: #181818;
+  color: white;
+}
   

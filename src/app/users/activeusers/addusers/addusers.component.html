@@ -1,0 +1,46 @@
+<div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Add User</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <input
+            type="text"
+            [(ngModel)]="userDetails.firstname"
+            class="form-control"
+            placeholder="Firstname"
+          />
+        </div>
+      
+        <div class="form-group">
+          <input
+            type="text"
+            [(ngModel)]="userDetails.lastname"
+            class="form-control"
+            placeholder="Lastname"
+          />
+        </div>
+      
+        <div class="form-group">
+          <input
+            type="text"
+            [(ngModel)]="userDetails.occupation"
+            class="form-control"
+            placeholder="Occupation"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="file"
+            [(ngModel)]="userDetails.profilepic"
+            class="form-control"
+            placeholder="Profile Picture"
+          />
+        </div>
+      
+        <div class="form-group">
+          <button class="btn btn-dark" (click)=close()>Cancel</button>
+          <button class="btn btn-dark float-right" (click)="addUser()">
+            Add New User
+          </button>
+        </div>
+      </div>
